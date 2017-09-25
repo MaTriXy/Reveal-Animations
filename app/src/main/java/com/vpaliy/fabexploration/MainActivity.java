@@ -10,6 +10,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import com.vpaliy.fabexploration.dots.DotsFragment;
 import com.vpaliy.fabexploration.player.PlayerFragment;
+
 import butterknife.ButterKnife;
 import butterknife.BindView;
 
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.main);
         ButterKnife.bind(this);
         setUpDrawer();
-        navigation.setCheckedItem(R.id.dots);
+        loadFragment(new PlayerFragment());
     }
 
     private void setUpDrawer(){
