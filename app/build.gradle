@@ -1,8 +1,18 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
+    signingConfigs {
+        materialConfig {
+            keyAlias 'key0'
+            keyPassword 'materialmotion'
+            storeFile file("$rootDir/keys.jks")
+            storePassword 'materialmotion'
+        }
+    }
     compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.vpaliy.fabexploration"
         minSdkVersion 16
@@ -10,42 +20,41 @@ android {
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        jackOptions {
-            enabled true
-        }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    
     buildTypes {
         release {
+            debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.materialConfig
         }
     }
     lintOptions {
+        abortOnError false
         disable 'RestrictedApi'
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile ('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
-        transitive = true;
+    implementation('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true
     }
-    compile 'com.github.ohoussein.playpauseview:playpauseview:1.0.1'
-    compile "com.andkulikov:transitionseverywhere:1.7.4"
-    compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:cardview-v7:25.4.0'
+    implementation 'com.github.vpaliyX:android-extensions:-SNAPSHOT'
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    implementation 'com.github.ohoussein.playpauseview:playpauseview:1.0.1'
+    implementation 'com.andkulikov:transitionseverywhere:1.7.4'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support:design:25.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

@@ -1,11 +1,21 @@
 <resources>
-    <string name="app_name">FabExploration</string>
-
-    <string name="track_author">Kodaline</string>
-    <string name="track_title">In a Perfect World</string>
-
+    <string name="app_name">Material Motion</string>
+    <string name="drawer_warning">Open the left drawer</string>
+    <string name="disappear_message">This message will disappear in</string>
+    <string name="enable_message">Warning</string>
     <string name="player_example">Player</string>
-    <string name="movies_example">Movies</string>
     <string name="dots_example">Dots</string>
-    <string name="swipe_note">Swipe to the left </string>
+    <string name="sheets_example">Sheets</string>
+    <string name="photo_example">PhotoCard</string>
+    <string name="track_author" translatable="false">Kodaline</string>
+    <string name="track_title" translatable="false">In a Perfect World</string>
+    <string name="git_item" translatable="false">GitHub</string>
+    <string name="share_example">Share</string>
+    <string name="GitHub" translatable="false">https://www.github.com/vpaliyX</string>
+
+    <string name="gitHub" translatable="false">GitHub</string>
+    <string name="twitter" translatable="false">Twitter</string>
+    <string name="google" translatable="false">Google</string>
+    <string name="facebook" translatable="false">Facebook</string>
+    <string name="linkedin" translatable="false">LinkedIn</string>
 </resources>

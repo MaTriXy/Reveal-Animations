@@ -24,6 +24,14 @@
     <dimen name="details_subtitle_size">18sp</dimen>
 
     <dimen name="morph_radius">100dp</dimen>
-
+    <dimen name="message_elevation">10dp</dimen>
     <dimen name="panel_height">150dp</dimen>
+
+    <!-- Sheets -->
+    <dimen name="sheet_expanded_height">300dp</dimen>
+    <dimen name="sheet_shrunk_height">150dp</dimen>
+    <dimen name="sheet_elevation">12dp</dimen>
+
+    <dimen name="photo_size">150dp</dimen>
+    <dimen name="share_icon_size">64dp</dimen>
 </resources>
