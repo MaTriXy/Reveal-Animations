@@ -1,11 +1,11 @@
 # Material Motion
-[![Build Status](https://travis-ci.org/vpaliyX/Reveal-Animations.svg?branch=master)](https://travis-ci.org/vpaliyX/Reveal-Animations)
+[![Build Status](https://travis-ci.org/vpaliyX/Reveal-Animations.svg?branch=master)](https://travis-ci.org/vpaliy/Reveal-Animations)
 
 <a href="https://play.google.com/store/apps/details?id=com.vpaliy.fabexploration">
 <img src="https://github.com/vpaliyX/LoginConcept/blob/master/art/get_it.png" />
 </a>
 
-## Or download the APK file ![here](https://github.com/vpaliyX/Material-Motion/releases/download/v1.0/app-release.apk) ##
+## Or download the APK file [here](https://github.com/vpaliy/Material-Motion/releases/download/v1.0/app-release.apk) ##
 
 
 This repostiroy contains different reveal animations (will add more soon).
@@ -31,7 +31,7 @@ If you decide you want to run the app:
 ``````
 Apache License
 
-Copyright (c) 2017 Vasyl Paliy
+Copyright (c) 2018 Vasyl Paliy
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
